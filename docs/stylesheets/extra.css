@@ -223,6 +223,7 @@
 
 /* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 768px) {
+
   .hero-title {
     font-size: 2rem;
   }
@@ -373,6 +374,7 @@
   .md-sidebar,
   .md-footer {
     display: none !important;
+    color: white !important;
   }
 
   .project-cards {
@@ -472,3 +474,33 @@
   color: white !important;
   border: none !important;
 }
+
+
+.md-nav__title,
+.md-nav__link {
+  color: white !important;
+}
+/* ===== FORCE ALL HEADER ICONS TO WHITE ===== */
+.md-header__button,
+.md-header__button .md-icon,
+.md-header-nav__button,
+.md-header-nav__button .md-icon,
+.md-icon {
+  color: white !important;
+  fill: white !important;
+}
+
+.md-header__button:hover,
+.md-header-nav__button:hover,
+.md-icon:hover {
+  color: #2d87a0 !important;
+  fill: #2d87a0 !important;
+}
+/* Force GitHub repo text to white everywhere */
+.md-source,
+.md-source__repository,
+.md-nav__link.md-source__repository {
+  color: white !important;
+}
+
+
