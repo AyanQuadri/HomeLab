@@ -2,11 +2,11 @@
 site_name: "Cybersecurity, Homelab Projects"
 site_description: "Documentation for my cybersecurity homelab and self-hosted infrastructure projects"
 site_author: "Ayan Quadri"
-site_url: "https://AyanQuadri.github.io/homelab-docs"
+site_url: "https://AyanQuadri.github.io/HomeLab"
 
 # Repository
 repo_name: "HomeLab"
-repo_url: "https://github.com/AyanQuadri/homelab-docs"
+repo_url: "https://github.com/AyanQuadri/HomeLab"
 edit_uri: "edit/main/docs/"
 
 # Navigation
