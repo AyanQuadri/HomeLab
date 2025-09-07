@@ -4,9 +4,17 @@
     <strong>🔐 {{ config.site_name }}</strong>
   </span>
 </div>
-{% endblock %} 
-{% block content %} {{ super() }} {% if page.title ==
-"Home" %}
+{% endblock %} {% block extrahead %} {{ super() }}
+<!-- Open Graph meta tags -->
+<meta property="og:title" content="HomeLab" />
+<meta property="og:description" content="Cybersecurity homelab projects with Proxmox, Arch Linux, Docker, and Supabase." />
+<meta
+  property="og:image"
+  content="https://AyanQuadri.github.io/HomeLab/assets/HomeLab-Preview.png"
+/>
+<meta property="og:url" content="https://AyanQuadri.github.io/HomeLab" />
+<meta property="og:type" content="website" />
+{% endblock %} {% block content %} {{ super() }} {% if page.title == "Home" %}
 <div class="project-cards">
   <div class="project-card">
     <div class="project-header">
@@ -42,5 +50,4 @@
     <a href="supabase/" class="project-link">Read More →</a>
   </div>
 </div>
-{% endif %} {% endblock %} 
-
+{% endif %} {% endblock %}
