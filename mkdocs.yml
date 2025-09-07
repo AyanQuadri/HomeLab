@@ -1,0 +1,129 @@
+# MkDocs Configuration
+site_name: "Cybersecurity, Homelab Projects"
+site_description: "Documentation for my cybersecurity homelab and self-hosted infrastructure projects"
+site_author: "Ayan Quadri"
+site_url: "https://AyanQuadri.github.io/homelab-docs"
+
+# Repository
+repo_name: "HomeLab"
+repo_url: "https://github.com/AyanQuadri/homelab-docs"
+edit_uri: "edit/main/docs/"
+
+# Navigation
+nav:
+  - Home: index.md
+  - Homelab & Networking:
+    - Overview: homelab/index.md
+    - Proxmox Setup: homelab/proxmox.md
+    - Arch Linux VMs: homelab/arch-linux.md
+    - File Sharing: homelab/file-sharing.md
+    - Network Security: homelab/networking.md
+    - Troubleshooting: homelab/troubleshooting.md
+    - Performance: homelab/performance.md
+  - Self-Hosted Supabase:
+    - Overview: supabase/index.md
+    - Installation Guide: supabase/installation.md
+    - Docker Setup: supabase/docker-setup.md
+    - Twingate Security: supabase/twingate.md
+    - Access Control: supabase/access-control.md
+    - Backup & Recovery: supabase/backup.md
+    - Monitoring: supabase/monitoring.md
+
+# Theme
+theme:
+  name: material
+  favicon: assets/HomeLab-logo.png
+  logo: assets/HomeLab-logo.png
+  custom_dir: docs/overrides
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - search.highlight
+    - search.share
+    - toc.integrate
+    - content.code.copy
+    - content.code.annotate
+  palette:
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+  font:
+    text: JetBrains Mono
+    code: Fira Code
+  icon:
+    logo: material/security
+    repo: fontawesome/brands/github
+
+# Plugins
+plugins:
+  - search:
+      separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - minify:
+      minify_html: true
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      # permalink: true
+      anchorlink: true
+      anchorlink_class: "toclink"
+      toc_depth: 2
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:materialx.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Extra CSS
+extra_css:
+  - stylesheets/extra.css
+  - stylesheets/extra-timeline.css
+
+# Extra
+extra:
+  generator: true 
+  version:
+    provider: mike
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/AyanQuadri
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/ayan-quadri
+
+copyright: Copyright &copy; 2025 Ayan Quadri
