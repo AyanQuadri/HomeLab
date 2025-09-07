@@ -6,7 +6,7 @@ Welcome to my cybersecurity homelab documentation. This site showcases two major
 
 ## Project Overview
 
-### [Homelab & Networking Setup](homelab.md)
+### [Homelab & Networking Setup](homelab)
 
 ![Completed](https://img.shields.io/badge/Status-Completed-success)
 
@@ -14,19 +14,15 @@ I built a comprehensive homelab environment using Proxmox VE for virtualization,
 
 **Key Technologies:** Proxmox VE, Arch Linux, Samba, SSH, LVM, NTFS-3G
 
-[**→ Read the complete guide**](homelab.md)
-
 ---
 
-### [Self-Hosted Supabase with Secure Access](supabase.md)
+### [Self-Hosted Supabase with Secure Access](supabase)
 
 ![In Production](https://img.shields.io/badge/Status-In_Production-red)
 
 I deployed a containerized Supabase instance on Arch Linux with Docker, implementing secure remote access through Twingate's zero-trust network access. The setup provides a fully functional PostgreSQL-based backend accessible securely from anywhere.
 
 **Key Technologies:** Docker, Supabase, PostgreSQL, Twingate, Arch Linux
-
-[**→ Read the complete guide**](supabase.md)
 
 ---
 
