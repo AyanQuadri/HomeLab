@@ -1,5 +1,5 @@
 # MkDocs Configuration
-site_name: "Cybersecurity, Homelab Projects"
+site_name: "HomeLab Docs"
 site_description: "Documentation for my cybersecurity homelab and self-hosted infrastructure projects"
 site_author: "Ayan Quadri"
 site_url: "https://AyanQuadri.github.io/HomeLab"
