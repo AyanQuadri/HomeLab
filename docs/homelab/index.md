@@ -69,5 +69,3 @@ smbpasswd -a <your-username>
 sed -i 's/^#\?PermitRootLogin.*/PermitRootLogin no/' /etc/ssh/sshd_config
 systemctl restart ssh smbd nmbd
 ```
-
-This homelab setup demonstrates practical cybersecurity infrastructure skills and provides a robust foundation for further security research and testing.
