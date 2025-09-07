@@ -1,0 +1,46 @@
+{% extends "base.html" %} {% block site_name %}
+<div class="md-header__topic">
+  <span class="md-ellipsis">
+    <strong>🔐 {{ config.site_name }}</strong>
+  </span>
+</div>
+{% endblock %} 
+{% block content %} {{ super() }} {% if page.title ==
+"Home" %}
+<div class="project-cards">
+  <div class="project-card">
+    <div class="project-header">
+      <h3>Homelab & Networking</h3>
+      <span class="project-status completed">Completed</span>
+    </div>
+    <p>
+      Comprehensive virtualization environment with Proxmox VE, secure file
+      sharing, and network hardening.
+    </p>
+    <div class="project-tech">
+      <span class="tech-tag">Proxmox VE</span>
+      <span class="tech-tag">Samba</span>
+      <span class="tech-tag">SSH Security</span>
+    </div>
+    <a href="homelab/" class="project-link">Read More →</a>
+  </div>
+
+  <div class="project-card">
+    <div class="project-header">
+      <h3>Self-Hosted Supabase</h3>
+      <span class="project-status production">In Production</span>
+    </div>
+    <p>
+      Containerized PostgreSQL backend with secure remote access via zero-trust
+      networking.
+    </p>
+    <div class="project-tech">
+      <span class="tech-tag">Docker</span>
+      <span class="tech-tag">PostgreSQL</span>
+      <span class="tech-tag">Twingate</span>
+    </div>
+    <a href="supabase/" class="project-link">Read More →</a>
+  </div>
+</div>
+{% endif %} {% endblock %} 
+
